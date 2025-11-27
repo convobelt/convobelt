@@ -6,7 +6,7 @@ import { ArrowRight, Box, ScanLine } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-white">
+        <section className="relative pt-24 pb-16 md:pt-48 md:pb-32 overflow-hidden bg-white">
             {/* Background Grid */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40 pointer-events-none" />
 
