@@ -6,6 +6,7 @@ import { Button } from "./ui/Button";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
+    const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
     const navLinks = [
         { name: "Problem", href: "#problem" },
         { name: "Solution", href: "#solution" },
@@ -23,7 +24,7 @@ export default function Navbar() {
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2">
                     <Image
-                        src="/logo.png"
+                        src={`${prefix}/logo.png`}
                         alt="Convobelt Logo"
                         width={150}
                         height={40}

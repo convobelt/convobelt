@@ -4,9 +4,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function ClientsSection() {
+    const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
     const clients = [
-        { name: "Stylo Group", logo: "/client-stylo.png", width: 180, height: 60 },
-        { name: "Jogger Footwear", logo: "/client-jogger.png", width: 140, height: 50 },
+        { name: "Stylo Group", logo: `${prefix}/client-stylo.png`, width: 180, height: 60 },
+        { name: "Jogger Footwear", logo: `${prefix}/client-jogger.png`, width: 140, height: 50 },
     ];
 
     return (
