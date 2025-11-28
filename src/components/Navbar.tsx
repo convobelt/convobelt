@@ -10,11 +10,9 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
     const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
     const navLinks = [
-        { name: "About", href: "#about" },
         { name: "Problem", href: "#problem" },
         { name: "Solution", href: "#solution" },
         { name: "Features", href: "#features" },
-        { name: "Workflow", href: "#workflow" },
         { name: "Contact", href: "#contact" },
     ];
 

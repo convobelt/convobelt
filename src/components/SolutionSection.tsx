@@ -6,29 +6,22 @@ import { CheckCircle2 } from "lucide-react";
 export default function SolutionSection() {
     const steps = [
         {
-            title: "Order & carton intake",
-            desc: "Import customer orders and carton-level definitions, including predefined size sets.",
-            color: "text-brand-blue",
-            bg: "bg-brand-blue/10",
-            border: "border-brand-blue/20"
+            title: "Order Ingestion",
+            desc: "System receives actual customer orders and production plans.",
+            color: "text-blue-400",
+            bg: "bg-blue-400/10",
+            border: "border-blue-400/20"
         },
         {
-            title: "Pair scanning + QC gates",
-            desc: "Barcode scans match components, validate inner cartons, and stop defects at the belt.",
-            color: "text-emerald-500",
-            bg: "bg-emerald-500/10",
-            border: "border-emerald-500/20"
-        },
-        {
-            title: "Real-time inventory & scheduling",
-            desc: "Material levels update automatically, preventing shortages while scheduling respects actual demand.",
+            title: "Smart Scheduling",
+            desc: "Algorithms align mold availability with order priority.",
             color: "text-indigo-400",
             bg: "bg-indigo-400/10",
             border: "border-indigo-400/20"
         },
         {
-            title: "FG management with filtering",
-            desc: "Track finished goods in and out with size and colour filters, secured by role-based controls.",
+            title: "Precision Production",
+            desc: "Conveyor only runs for shoes that are needed. No waste.",
             color: "text-brand-red",
             bg: "bg-brand-red/10",
             border: "border-brand-red/20"
@@ -43,11 +36,10 @@ export default function SolutionSection() {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-                        Your production control loop in one place
+                        Move to <span className="text-brand-blue">Plan-Driven</span> Manufacturing
                     </h2>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                        Connect order plans, scanning, scheduling, and finished goods tracking so every step stays aligned with
-                        demand.
+                        Align conveyor heat cycles with actual order plans. Stop guessing, start executing with precision.
                     </p>
                 </div>
 

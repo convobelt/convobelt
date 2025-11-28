@@ -26,11 +26,10 @@ export default function ProblemSection() {
             <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-                        When production outruns demand
+                        The <span className="text-red-600">&ldquo;Cut Size&rdquo;</span> Crisis
                     </h2>
                     <p className="text-lg text-slate-600">
-                        Without a live link between orders, materials, and the belt, factories produce for the mold instead of the
-                        customer. The result is a wave of cut sizes, shortages, and rework that erodes margin.
+                        Factories today are <strong className="text-slate-900">Mold-Driven</strong>. They produce shoes just because the mold is hot, not because an order exists. This leads to massive piles of unwanted inventory and wasted materials.
                     </p>
                 </div>
 
@@ -55,20 +54,20 @@ export default function ProblemSection() {
                         <div className="absolute bottom-8 left-8 right-8 z-10">
                             <div className="flex items-center gap-3 text-red-600 mb-2">
                                 <AlertTriangle className="w-6 h-6" />
-                                <span className="font-mono font-bold">PRODUCTION DRIFT</span>
+                                <span className="font-mono font-bold">CRITICAL ERROR</span>
                             </div>
-                            <h3 className="text-2xl font-bold text-slate-900 mb-2">Output without demand</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-2">Uncontrolled Output</h3>
                             <p className="text-slate-600 text-sm">
-                                Machines run because they can, not because they should—creating scrap, dead stock, and urgent rework.
+                                Inventory piles up. Wrong sizes are made. Dead stock accumulates.
                             </p>
                         </div>
                     </div>
 
                     <div className="space-y-8">
                         {[
-                            { title: "Machine-first scheduling", desc: "Runs are triggered because a mold is hot, not because an order exists." },
-                            { title: "Inventory blind spots", desc: "Material levels are invisible until shortages stop the line." },
-                            { title: "Quality escapes", desc: "Missing QC checkpoints create rework, delays, and compliance risk." }
+                            { title: "Wasted Materials", desc: "Raw materials consumed for shoes nobody ordered." },
+                            { title: "Storage Overflow", desc: "Warehouses filled with 'Cut Sizes' that may never sell." },
+                            { title: "Profit Erosion", desc: "Every unsold shoe eats into the margin of the sold ones." }
                         ].map((item, i) => (
                             <motion.div
                                 key={i}
