@@ -24,19 +24,19 @@ export default function Hero() {
                         SYSTEM ONLINE
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold leading-tight text-slate-900 mb-6">
-                        Eliminate <span className="text-brand-red">&ldquo;Cut Sizes.&rdquo;</span> <br />
-                        Take Control of Your Production.
+                        Production that follows <span className="text-brand-red">the plan</span>, not the mold.
                     </h1>
                     <p className="text-lg text-slate-600 mb-8 max-w-lg leading-relaxed">
-                        The first intelligent tracking system to bridge the gap between your order plan and the factory floor.
+                        CONVOBELT blends barcode pair scanning, real-time inventory, and role-secure scheduling into one control
+                        plane so every run, box, and carton matches the orders you actually sold.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Button size="lg" className="group">
-                            Request a Demo
+                            Book a demo
                             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Button>
                         <Button variant="outline" size="lg">
-                            View Documentation
+                            Explore the platform
                         </Button>
                     </div>
                 </motion.div>

@@ -1,30 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ClipboardList, Activity, PackageCheck } from "lucide-react";
+import { Boxes, Filter, ScanLine, ShieldCheck } from "lucide-react";
 
 export default function FeaturesGrid() {
     const features = [
         {
-            title: "Intelligent Order Planning",
-            desc: "Stop letting machinery dictate output. Produce based on real orders.",
-            icon: ClipboardList,
-            color: "text-emerald-400",
-            bg: "bg-emerald-400/10"
+            title: "Pair scanning capability",
+            desc: "Barcode-first matching across pairwise and conveyor belt scanning keeps every component together and verified.",
+            icon: ScanLine,
+            color: "text-brand-red",
+            bg: "bg-brand-red/10"
         },
         {
-            title: "Real-Time Tracing",
-            desc: "Track the lifecycle of every item on the belt against mold availability.",
-            icon: Activity,
+            title: "Real-time inventory management",
+            desc: "Material stock adjusts dynamically as scans happen, preventing shortages and keeping production flowing.",
+            icon: Boxes,
+            color: "text-emerald-500",
+            bg: "bg-emerald-500/10"
+        },
+        {
+            title: "Quality control modules",
+            desc: "Embedded QC checkpoints on the belt catch issues early, protecting standards and uptime.",
+            icon: ShieldCheck,
             color: "text-brand-blue",
             bg: "bg-brand-blue/10"
         },
         {
-            title: "Sorting Logistics",
-            desc: "Digitized sorting ensures the right shoe goes to the right box, eliminating manual errors.",
-            icon: PackageCheck,
-            color: "text-brand-red",
-            bg: "bg-brand-red/10"
+            title: "FG management with filtering",
+            desc: "Track finished goods in and out with size and colour filters, backed by role-based controls for precision.",
+            icon: Filter,
+            color: "text-indigo-400",
+            bg: "bg-indigo-400/10"
         }
     ];
 
@@ -33,14 +40,14 @@ export default function FeaturesGrid() {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-                        System Capabilities
+                        Platform features that keep production honest
                     </h2>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                        Built for the modern factory floor.
+                        From scanning to inventory and finished goods, every capability is built to keep the belt aligned with demand.
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
                     {features.map((feature, i) => (
                         <motion.div
                             key={i}
