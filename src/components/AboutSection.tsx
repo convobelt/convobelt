@@ -6,18 +6,18 @@ import { LineChart, ShieldCheck, Users } from "lucide-react";
 export default function AboutSection() {
     const highlights = [
         {
-            title: "Order-aware execution",
-            desc: "Track every order, schedule, and machine allocation in one place so production always follows the plan.",
+            title: "Order tracking & planning",
+            desc: "A suite built for efficient order tracking, production scheduling, and machine allocation in one place.",
             icon: LineChart
         },
         {
-            title: "Real-time control",
-            desc: "Give teams live visibility into belt activity, stock positions, and finished goods without chasing spreadsheets.",
+            title: "Real-time insight",
+            desc: "Live visibility that lifts productivity and operational transparency across the factory floor.",
             icon: Users
         },
         {
-            title: "Secure by design",
-            desc: "Role-based access keeps sensitive operations safe while letting every contributor move quickly.",
+            title: "Security & roles",
+            desc: "Role management and safeguards that let teams focus on delivering quality products efficiently.",
             icon: ShieldCheck
         }
     ];
@@ -35,16 +35,16 @@ export default function AboutSection() {
                         About Convobelt
                     </p>
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
-                        A production management platform built to end guesswork.
+                        A transformative production management platform.
                     </h2>
                     <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                        CONVOBELT brings together advanced scanning, planning, and machine coordination so factories can operate
-                        with real-time insight. From efficient order tracking and production scheduling to machine allocation, the
-                        platform gives manufacturers the control and transparency needed to deliver quality products efficiently.
+                        CONVOBELT integrates advanced technologies with user-centric design to deliver a comprehensive set of tools
+                        for production and planning. Track orders, schedule production, and allocate machines with confidence.
                     </p>
                     <p className="text-lg text-slate-600 leading-relaxed">
-                        We pair user-centric design with strict security and role management, letting teams focus on making and
-                        moving the right goods instead of reconciling data.
+                        Our mission is to empower manufacturers with real-time insights and control over their operations while
+                        keeping security and user role management at the core—so teams can focus on building quality products,
+                        efficiently.
                     </p>
                 </motion.div>
 

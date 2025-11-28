@@ -10,9 +10,9 @@ export default function WorkflowSection() {
             icon: ScanLine,
             desc: "Barcode-first workflows keep every component matched and verified as it moves through the belt.",
             bullets: [
-                "Dashboard supports both pairwise scanning and conveyor scanning as core operations.",
-                "Finished Goods are tracked on entry and exit with scanners so nothing slips past the gate.",
-                "Boxes are verified by scanning inner cartons before a shipment is established."
+                "Dashboard supports both pairwise scanning and conveyor belt scanning as integral mechanisms.",
+                "Finished Goods are tracked as they enter and exit the facility via barcode scanners.",
+                "Box verification and box creation happen by scanning and inspecting the inner cartons."
             ]
         },
         {
@@ -20,9 +20,9 @@ export default function WorkflowSection() {
             icon: CalendarCheck2,
             desc: "Turn carton-level definitions into executable plans, then run and reconcile production daily.",
             bullets: [
-                "Generate orders from individual cartons and predefined size sets to keep cuts aligned.",
-                "Plan, manage, and execute daily manufacturing runs without losing view of the schedule.",
-                "Cut-size and finished goods activities are documented and exportable as Excel data."
+                "Generate orders based on individual cartons and predefined sizes.",
+                "Plan, manage, and execute daily manufacturing orders with a clear schedule.",
+                "Cut-size, planned orders, and finished goods operations are documented and exportable as Excel data."
             ]
         }
     ];
